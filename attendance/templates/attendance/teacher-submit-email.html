@@ -1,0 +1,12 @@
+{% extends 'attendance/base.html' %}
+{% block site_title %}Thapar Connect - Teacher | Submit Email{% endblock %}
+{% block site_button_link %}{% url 'attendance:login' %}{% endblock %}
+{% block site_button_name %}Login{% endblock %}
+
+{% block site_body %}
+    <form class="site-form" method="post" action="{% url 'attendance:teacher-submit-email' %}">
+        {% csrf_token %}
+        {{ email_form.as_p }}
+        <button type="form-submit">Submit</button>
+    </form>
+{% endblock %}

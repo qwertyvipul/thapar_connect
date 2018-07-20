@@ -1,0 +1,28 @@
+{% extends 'attendance/base.html' %}
+{% block site_title %}Thapar Connect - Teacher{% endblock %}
+{% block site_body %}
+    <div class="main-div">
+        <header class="main-div-head"><h3>All your classes</h3></header>
+        <section class="main-div-body">
+            <div class="app-div">
+                <header class="app-name"><pre>Class Name</pre></header>
+                <section class="app-body">
+                    Class Details
+                </section>
+                <footer class="app-body"><button>Click Here</button></footer>
+            </div>
+        </section><hr/>
+    </div>
+    <div class="main-div">
+        <header class="main-div-head"><h3>Explore More</h3></header>
+        <section class="main-div-body">
+            <div class="app-div">
+                <header class="app-name"><pre>Add Class</pre></header>
+                <section class="app-body">
+                    Add all your classes to get directly connected.
+                </section>
+                <footer class="app-body"><a href="{% url 'attendance:add-class' %}"><button>Click Here</button></a></footer>
+            </div>
+        </section><hr/>
+    </div>
+{% endblock %}

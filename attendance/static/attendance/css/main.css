@@ -1,0 +1,8 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+.main-site{max-width: 600px; margin: 0 auto;}
+.site-head{padding: 8px 5px;}
+.site-name{float: left;}
+.site-button{float: right; margin-top: 1px; padding:0px 2px;}
+.site-nav-list li{list-style: none; float: left; padding: 5px; color: #000;}
+.site-nav-list li:hover{background: #eaeaea;}
+.site-footer{font-size: 12px; background: #cdcdcd; padding: 5px;}
