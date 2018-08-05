@@ -1,0 +1,13 @@
+{% extends 'attendance/form.html' %}
+{% block site_title %}Thapar Connect - Login{% endblock %}
+{% block site_button_link %}{% url 'attendance:register' %}{% endblock %}
+{% block site_button_name %}Register{% endblock %}
+
+{% block form_head %}Login Form{% endblock %}
+{% block form_body %}
+    <form class="site-form" method="post" action="{% url 'attendance:login' %}">
+        {% csrf_token %}
+        {{ login_form.as_p }}
+        <button type="form-submit">Login</button>
+    </form>
+{% endblock %}

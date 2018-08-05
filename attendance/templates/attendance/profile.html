@@ -1,0 +1,9 @@
+{% extends 'attendance/base.html' %}
+{% block site_title %}Thapar Connect - Profile{% endblock %}
+{% block site_body %}
+    <div class="profile-image">
+        <img src="#" width="200px" height="200px"/>
+        <button>Change Profile Picture</button>
+        <h3>{{ user.name }}</h3>
+    </div><hr/>
+{% endblock %}

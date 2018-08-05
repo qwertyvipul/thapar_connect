@@ -1,0 +1,13 @@
+{% extends 'attendance/form.html' %}
+{% block site_title %}Thapar Connect - Verify OTP{% endblock %}
+{% block site_button_link %}{% url 'attendance:login' %}{% endblock %}
+{% block site_button_name %}Login{% endblock %}
+
+{% block form_head %}Verify OTP{% endblock %}
+{% block form_body %}
+    <form class="site-form" method="post" action="{% url 'attendance:verify-otp' %}">
+        {% csrf_token %}
+        {{ otp_form.as_p }}
+        <button type="form-submit">Verify</button>
+    </form>
+{% endblock %}

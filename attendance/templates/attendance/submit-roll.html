@@ -1,0 +1,12 @@
+{% extends 'attendance/base.html' %}
+{% block site_title %}Thapar Connect - Submit Roll{% endblock %}
+{% block site_button_link %}{% url 'attendance:login' %}{% endblock %}
+{% block site_button_name %}Login{% endblock %}
+
+{% block site_body %}
+    <form class="site-form" method="post" action="{% url 'attendance:submit-roll' %}">
+        {% csrf_token %}
+        {{ roll_form.as_p }}
+        <button type="form-submit">Submit</button>
+    </form>
+{% endblock %}

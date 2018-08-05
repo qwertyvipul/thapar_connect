@@ -1,0 +1,24 @@
+{% extends 'attendance/base.html' %}
+{% block site_title %}Thapar Connect - Home{% endblock %}
+{% block site_body %}
+    <div class="main-div">
+        <header class="main-div-head">
+            <h3>Apps</h3>
+        </header>
+        <section class="main-div-section">
+            <div class="app-div">
+                <header class="app-name">Teacher App</header>
+                <section class="app-body">Mark Attendance and much more.</section>
+                <footer class="app-foot"><a href="{% url 'attendance:teacher' %}"><button>Click Here</button></a></footer>
+            </div><hr/>
+            <div class="app-div">
+                <header class="app-name">Student App</header>
+                <section class="app-body">Get more connected to your college.</section>
+                <footer class="app-foot"><a href="{% url 'attendance:student' %}"><button>Click Here</button></a></footer>
+            </div><hr/>
+        </section>
+        <!--<footer class="main-div-foot">
+            <button>Load More</button>
+        </footer>-->
+    </div>
+{% endblock %}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'attendance/css/main.css' %}"/>
+    <title>{% block site_title %}Thapar Connect - Untitled{% endblock %}</title>
+</head>
+<body>
+<section class="main-site">
+    <header class="site-head">
+        <div class="site-name"><h2>Thapar Connect</h2></div>
+        <div class="site-button"><a href="{% block site_button_link %}{% url 'attendance:logout' %}{% endblock %}">
+            <button class="site-button">{% block site_button_name %}Logout{% endblock %}</button></a></div>
+        <div style="clear:both;"></div>
+    </header><hr/>
+    <nav class="site-nav">
+        {% block site_nav %}
+            <ul class="site-nav-list">
+                <a href="{% url 'attendance:index' %}"><li>Home</li></a>
+                <a href="{% url 'attendance:profile' %}"><li>Profile</li></a>
+                <!--<a href="#"><li>News</li></a>
+                <a href="#"><li>Messages</li></a>
+                <a href="#"><li>Notifications</li></a>-->
+                <div style="clear: both"/>
+            </ul><hr/>
+        {% endblock %}
+    </nav>
+    <section class="site-body">
+        {% block site_body %}{% endblock %}
+    </section>
+    <footer>
+        <div class="site-footer">
+            &copy; Copyright 2018 | This website is developed and managed by Vipul Sharma.
+        </div>
+    </footer>
+</section>
+</body>
+</html>
