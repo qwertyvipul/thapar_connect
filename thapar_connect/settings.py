@@ -142,7 +142,7 @@ EMAIL_USE_TLS = False
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'connect.thapar@gmail.com'
-EMAIL_HOST_PASSWORD = 'ForTheChange#11'
+EMAIL_HOST_USER = 'someone@gmail.com'
+EMAIL_HOST_PASSWORD = '********'
 
 
