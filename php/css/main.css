@@ -1,0 +1,74 @@
+/*MOBILE*/
+*{margin:0px; padding:0px; box-sizing:border-box; }
+body{ font-size:100%;  }
+#bannerbox{ background-image:url("../images/sns.jpg"); height:10%; font-size:2em; color:#666666; font-family:"Sans Serif"; font-weight:bold; }
+#sitename{ -webkit-text-fill-color: #ffffff; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: 0.03em;
+ font-size:1.2em; font-weight:bold; text-align:center; padding:1.6em 0; }
+ 
+/* #sitelogo{float:right; background:#000000; color:#ffffff; padding:1.2em; border-radius:2.2em; } */
+
+#menubox{ position: -webkit-sticky; position: sticky; top: 0; width: 100%; text-align: center; z-index:1;}
+#menu{ display:block; margin:0 auto; border-top:1px solid #999999; border-bottom:1px solid #999999; }
+.item1, .item2{ display:block; float:left; background:#ffffff; color:#aaaaaa; width:25%; padding:0.4em 0; display:inline;}
+.item2{display:none}
+.item1:hover{background:#eeeeee;}
+.item2:hover{background:#eeeeee;}
+#maindiv{clear:both; border:12% solid #1e90ff; position:relative;}
+.tile{ float:left; text-align:center; width:50%; padding:12% 0; font-weight:bold; color:white; opacity:0.7; }
+.tile:nth-child(8n+1){background:#ffbb33;} .tile:nth-child(8n+2){background:#afafaf;} .tile:nth-child(8n+3){background:#f5aa66;} .tile:nth-child(8n+4){background:#dddd00;} .tile:nth-child(8n+5){background:#ff6688;} .tile:nth-child(8n+6){background:#88aa33;} .tile:nth-child(8n+7){background:#bf8f8f;} .tile:nth-child(8n+8){background:#00dd77;}
+.tile p{font-size:15px;letter-spacing:2px;}
+.tile i{font-size:36px;}
+.tile:hover { color:#555555; opacity:1; }
+
+/* Popup container - can be anything you want */
+.popup { position: relative; display: inline-block; cursor: pointer; -webkit-user-select: none;
+ -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* The actual popup */
+.popup .popuptext { visibility: hidden; width: 100%; opacity:1; color: #666666; text-align: center; letter-spacing:1px;
+border-radius: 0px; position: absolute; z-index: 1; top: 100%; left: 50%; margin-left: -50%; }
+
+.popuptext a{ text-decoration:none; color:inherit;}
+.popuptext a li{padding:0.6em; border-bottom:1px solid #eeeeee; opacity:1}
+.poplink1{background:#ffffff;}
+.poplink2{background:#eeeeee;}
+.popuptext a li:hover{ background:#dddddd; border-bottom:1px solid #dddddd; }
+
+/* Popup arrow */
+.popup .popuptext::after { content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; 
+border-style: solid; border-color: #fff transparent transparent transparent; }
+
+/* Toggle this class - hide and show the popup */
+.popup .show { visibility: visible; -webkit-animation: fadeIn 1s; animation: fadeIn 1s; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+@keyframes fadeIn { from {opacity: 0;} to {opacity:1 ;} }
+
+@media screen and (min-width:400px){ .tile{padding:10%;} .tile i{font-size:48px;} }
+@media screen and (min-width:500px){ .tile{width:33.33%; padding:10%;} .tile i{font-size:42px;} }
+@media screen and (min-width:576px){
+	body{}
+	#bannerbox{font-size:1.3em; }
+	.item1{ width:25%;}
+	.tile{width:33.33%; padding:9%;}
+	.tile i{font-size:45px;}
+}
+
+@media screen and (min-width:620px){ .tile{width:25%;padding:6%;} .tile i{font-size:42px;} }
+
+/**/
+@media screen and (min-width:700px){ .tile i{font-size:48px;} }
+@media screen and (min-width:992px){
+	body{}
+	#bannerbox{ font-size:1.6em; padding: 0 1.5em; }
+	#sitename{ text-align:center; padding:1.2em 0 1.2em 0em; }
+	.item1, #profile_icon{display:none}
+	.item2{ display:block; color:#999999; float:left; width:20%; padding:0.7em 0; display:inline; }
+	.tile{width:20%; padding:5%;}
+	.tile i{font-size:50px;}
+}
+@media screen and (min-width:1200px){ .tile{padding:6%;} .tile i{font-size:62px;} }
+#copyright_box{ width:100%; background:#000000; color:#ffffff; padding:0.5em; text-align:center; }
+#parent_link{ text-decoration:none; color:#90fe11; }
+#parent_link:hover{ color:#1190fe; }

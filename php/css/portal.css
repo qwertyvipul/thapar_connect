@@ -1,0 +1,37 @@
+/*WELCOME PAGE*/
+*{ margin:0px; padding:0px; box-sizing:border-box; }
+body{ font-size:100%; background:#000000; }
+#banner_box{ background:#ffffff; font-size:2em; font-family:"Sans Serif"; font-weight:bold; padding: 0 1.5em; }
+#sitename{ text-align:center; padding:1.2em 0 1.2em 0em; }
+
+/* #sitelogo{ float:right; background:#000000; color:#ffffff; padding:1.2em; border-radius:2.2em; } */
+
+#infobox{ background:#ff1e90; color:#ffffff; text-align:center; padding:10% 14%; }
+#info{ background:#ffffff; color:#000000; font-size:2em; padding:1em; }
+.bigbox{ color:#ffffff; text-align:center; padding:10% 14%; }
+#bigbox1{background:#1190fe;}
+#bigbox2{background:#90fe11;} 
+.bigbox_content{ background:#ffffff; color:#000000; font-size:1.5em; padding:1.25em; }
+.bigbox_content:hover{ background:#000000; color:#ffffff; }
+.bigbox_link{ text-decoration:none; color:#000000; }
+#copyright_box{ background:#000000; color:#ffffff; padding:0.5em; text-align:center; }
+#parent_link{ text-decoration:none; color:#90fe11; }
+#parent_link:hover{ color:#1190fe;}
+
+/*LOGIN PAGE*/
+#formbox{ background:#1190fe; padding:1em; }
+form{ background:#1190fe; margin:1em auto 2em; }
+fieldset{ padding:0; border:none; text-align:center; border-top:0.1em solid #000000; }
+legend{ color:#ffffff; text-align:center; text-shadow:1px 1px #000000; margin:0 auto 0.4em; font-size:1.3em; font-variant:small-caps; }
+table{ margin:0 auto; width:60%; border:none; text-align:center; padding: 0; }
+table tr{ padding:10px 0; border:none; } 
+td{ background:transparent; color:#000000; border:none; padding:0; }
+#message{ font-size:1.2em; margin-bottom:0.8em; } 
+.info{ font-size:1.2em; min-width:100%; text-align:center; padding:0.5em 0; border:none; box-shadow:0em 0em 1em #999999; }
+.info:hover{ background:yellow; }
+#submit_button{ background:#58f401; }
+#submit_button:hover{ background:#000000; color:#ffffff; cursor:pointer; }
+#forgot_button{ background:#fe9311; }
+#forgot_button:hover{ background:#000000; color:#ffffff; cursor:pointer; }
+.row{ padding:0; } 
+.column a{ text-decoration:none; }
